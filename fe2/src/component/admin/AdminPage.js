@@ -45,30 +45,30 @@ function AdminPage() {
   return (
     <div className='grid'>
       <div className='card'>
-        <h2>admin movie create</h2>
+        <h2>Admin Movie Adder</h2>
         <div>
           <form onSubmit={handleSubmit}>
             <div className='input-box'>
-              <input type="text" placeholder='movie name' onChange={(e) => setName(e.target.value)} />
+              <input type="text" placeholder='  movie name' onChange={(e) => setName(e.target.value)} />
             </div>
             <br />
             <div className='input-box'>
-              <input type="file" placeholder='movie image here..' onChange={(e) => setPhoto(e.target.files[0])} />
+              <input type="file"  id='fileadd' placeholder='movie image here..' onChange={(e) => setPhoto(e.target.files[0])} />
             </div>
             <br />
             <div className='input-box'>
-              <input type="number" placeholder='duration of movie' onChange={(e) => setRuntime(e.target.value)} />
+              <input type="number" placeholder='  duration of movie' onChange={(e) => setRuntime(e.target.value)} />
             </div>
             <div className='input-box'>
-              <input type="text" placeholder='enter trialer link' onChange={(e) => setTrialer(e.target.value)} />
-            </div>
-            <br />
-            <div className='input-box'>
-              <textarea placeholder='movie description' onChange={(e) => setDescription(e.target.value)} ></textarea>
+              <input type="text" placeholder='  enter trialer link' onChange={(e) => setTrialer(e.target.value)} />
             </div>
             <br />
             <div className='input-box'>
-              <button>Submit</button>
+              <textarea placeholder='  movie description' onChange={(e) => setDescription(e.target.value)} ></textarea>
+            </div>
+            <br />
+            <div className='input-box'>
+              <button className='adminsubmitbutton'>Submit</button>
             </div>
           </form>
         </div>
