@@ -1,0 +1,23 @@
+.grid {
+    display: flex;
+    justify-content: center;
+
+}
+
+.card {
+    margin-top: 80px;
+    width: 400px;
+    height: auto;
+    background-color: #ff9a3c;
+    padding: 20px;
+}
+
+.card h2 {
+    background-color: #ffc93c;
+    margin-bottom: 20px;
+}
+
+.input-box textarea {
+    padding-right: 80px;
+    padding-bottom: 50px;
+}

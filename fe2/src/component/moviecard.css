@@ -1,0 +1,28 @@
+.grid-movie {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: '35px';
+}
+
+.box {
+    background-color: rgb(252, 215, 5);
+    margin: 25px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid #ffae00;
+    padding: 10px;
+    box-shadow: 6px 4px 8px 4px;
+}
+
+.box img {
+    width: 350px;
+    height: auto;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
