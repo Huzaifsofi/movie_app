@@ -26,7 +26,7 @@ function MoviesCard() {
                 <Link to={`/${element._id}`} className="link">
                 <div className='box'>
                   <img src={`http://localhost:8000/${element.photo}`} alt='movie' />
-                  <h3>Name: {element.name}</h3>
+                  <h3 className='moviecardname'> {element.name}</h3>
                 </div>
                 </Link>
               </div>

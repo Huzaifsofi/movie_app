@@ -33,7 +33,7 @@ const Moviepage = () => {
         datakey.map(key => {
             return (
                 <div className='grid-detail'>
-                    <div className='box-detail first'>
+                    <div id='posterofdetail'  className='box-detail first'>
                         <div class='img-box'>
                             <img src={`http://localhost:8000/${key.photo}`} alt='movie img' />
                         </div>
@@ -54,8 +54,8 @@ const Moviepage = () => {
                                 return (
                                 <div className='com-movie'>
                                     <h3>@{element.username}</h3>
-                                    <h3>Reating:  {element.reating} stars</h3>
-                                    <h4>comment:  {element.name}</h4>
+                                    <h3>Rating:  {element.reating} stars</h3>
+                                    <h4>Comment:  {element.name}</h4>
                                 </div>
                                 )
                             })

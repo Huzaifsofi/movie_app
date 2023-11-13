@@ -6,16 +6,47 @@
     margin-top: '35px';
 }
 
+.moviecardname{
+    color: white;
+}
+
 .box {
-    background-color: rgb(252, 215, 5);
+    background-color: #222831;
     margin: 25px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border: 2px solid #ffae00;
+    border: 6px solid #ffae00;
     padding: 10px;
-    box-shadow: 6px 4px 8px 4px;
+    border-radius: 25px;
 }
+
+.box {
+    transition: transform 0.5s;
+}
+.box::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
+    content: '';
+    opacity: 0;
+    z-index: -1;
+    border-radius: 25px;
+    
+}
+
+
+.box:hover, .box:focus {
+    transform: scale3d(1.056, 1.056, 1);
+}
+.box:hover::after, .box:focus::after {
+    opacity: 1;
+}
+
 
 .box img {
     width: 350px;

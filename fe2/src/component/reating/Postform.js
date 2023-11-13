@@ -40,7 +40,7 @@ function Postform({ id }) {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <input className='input-comm' type='text' placeholder='write our comment....' onChange={(e) => setName(e.target.value)} name='name' />
+        <input className='input-comm' type='text' placeholder='Write Your Comment....' onChange={(e) => setName(e.target.value)} name='name' />
         <div>
         <div class="rate">
             <input type="radio" id="star5" name="rate" value='5' onChange={(e) => setReating(e.target.value)} />
@@ -55,7 +55,7 @@ function Postform({ id }) {
             <label for="star1" title="text">1 star</label>
         </div>
         </div>
-        <button className='btn-com' type='submit'>post</button>
+        <button className='btn-com-post' type='submit'>RATE & POST</button>
       </form>
     </div>
   );
